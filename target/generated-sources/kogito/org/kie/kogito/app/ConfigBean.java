@@ -30,11 +30,11 @@ public class ConfigBean extends org.kie.kogito.config.StaticConfigBean {
     @org.springframework.beans.factory.annotation.Value("${kogito.jackson.fail-on-empty-bean:#{false}}")
     boolean failOnEmptyBean;
 
-    @jakarta.annotation.PostConstruct
+    @javax.annotation.PostConstruct
     protected void init() {
         setServiceUrl(kogitoService.orElse(""));
         setCloudEvents(useCloudEvents);
         setFailOnEmptyBean(failOnEmptyBean);
-        setGav(new org.kie.kogito.KogitoGAV("org.kie.kogito.examples", "process-postgresql-persistence-springboot", "999-SNAPSHOT"));
+        setGav(new org.kie.kogito.KogitoGAV("org.kie.kogito.examples", "process-postgresql-persistence-springboot", "2.0.0-SNAPSHOT"));
     }
 }

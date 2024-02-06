@@ -41,7 +41,7 @@ public class IntermediateModelOutput implements org.kie.kogito.Model, MapInput, 
 
     @org.kie.kogito.codegen.VariableInfo(tags = "")
     @com.fasterxml.jackson.annotation.JsonProperty(value = "processid")
-    @jakarta.validation.Valid()
+    @javax.validation.Valid()
     private java.lang.String processid;
 
     public java.lang.String getProcessid() {
@@ -54,7 +54,7 @@ public class IntermediateModelOutput implements org.kie.kogito.Model, MapInput, 
 
     @org.kie.kogito.codegen.VariableInfo(tags = "")
     @com.fasterxml.jackson.annotation.JsonProperty(value = "success")
-    @jakarta.validation.Valid()
+    @javax.validation.Valid()
     private java.lang.String success;
 
     public java.lang.String getSuccess() {
@@ -67,7 +67,7 @@ public class IntermediateModelOutput implements org.kie.kogito.Model, MapInput, 
 
     @org.kie.kogito.codegen.VariableInfo(tags = "")
     @com.fasterxml.jackson.annotation.JsonProperty(value = "inter")
-    @jakarta.validation.Valid()
+    @javax.validation.Valid()
     private java.lang.String inter;
 
     public java.lang.String getInter() {
@@ -80,7 +80,7 @@ public class IntermediateModelOutput implements org.kie.kogito.Model, MapInput, 
 
     @org.kie.kogito.codegen.VariableInfo(tags = "")
     @com.fasterxml.jackson.annotation.JsonProperty(value = "start")
-    @jakarta.validation.Valid()
+    @javax.validation.Valid()
     private java.lang.String start;
 
     public java.lang.String getStart() {
@@ -93,7 +93,7 @@ public class IntermediateModelOutput implements org.kie.kogito.Model, MapInput, 
 
     @org.kie.kogito.codegen.VariableInfo(tags = "")
     @com.fasterxml.jackson.annotation.JsonProperty(value = "end")
-    @jakarta.validation.Valid()
+    @javax.validation.Valid()
     private java.lang.String end;
 
     public java.lang.String getEnd() {

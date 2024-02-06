@@ -97,13 +97,13 @@ public class IntermediateResource {
 
     @PutMapping(value = "/{id}", produces = MediaType.APPLICATION_JSON_VALUE, consumes = MediaType.APPLICATION_JSON_VALUE)
     @Operation(summary = "intermediate", description = "")
-    public IntermediateModelOutput updateModel_intermediate(@PathVariable("id") String id, @RequestBody(required = false) @jakarta.validation.Valid() @jakarta.validation.constraints.NotNull() IntermediateModelInput resource) {
+    public IntermediateModelOutput updateModel_intermediate(@PathVariable("id") String id, @RequestBody(required = false) @javax.validation.Valid() @javax.validation.constraints.NotNull() IntermediateModelInput resource) {
         return processService.update(process, id, resource.toModel()).orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND));
     }
 
     @PatchMapping(value = "/{id}", produces = MediaType.APPLICATION_JSON_VALUE, consumes = MediaType.APPLICATION_JSON_VALUE)
     @Operation(summary = "intermediate", description = "")
-    public IntermediateModelOutput updateModelPartial_intermediate(@PathVariable("id") String id, @RequestBody(required = false) @jakarta.validation.Valid() @jakarta.validation.constraints.NotNull() IntermediateModelInput resource) {
+    public IntermediateModelOutput updateModelPartial_intermediate(@PathVariable("id") String id, @RequestBody(required = false) @javax.validation.Valid() @javax.validation.constraints.NotNull() IntermediateModelInput resource) {
         return processService.updatePartial(process, id, resource.toModel()).orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND));
     }
 

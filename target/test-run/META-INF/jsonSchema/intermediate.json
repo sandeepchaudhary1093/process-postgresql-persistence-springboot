@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2019-09/schema","type":"object","properties":{"end":{"type":"string"},"inter":{"type":"string"},"processid":{"type":"string"},"start":{"type":"string"},"success":{"type":"string"}}}

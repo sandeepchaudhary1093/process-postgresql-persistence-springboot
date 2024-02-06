@@ -1,0 +1,24 @@
+syntax = "proto2"; 
+package org.acme.deals.second; 
+import "kogito-index.proto";
+import "kogito-types.proto";
+option kogito_model = "Second";
+option kogito_id = "second";
+
+/* @Indexed */ 
+message Second { 
+	option java_package = "org.acme.deals";
+	/* @Field(index = Index.YES, store = Store.YES) @SortableField
+ @VariableInfo(tags="") */ 
+	optional string end = 1; 
+	/* @Field(index = Index.YES, store = Store.YES) @SortableField */ 
+	optional string id = 2; 
+	/* @Field(index = Index.YES, store = Store.YES) @SortableField
+ @VariableInfo(tags="") */ 
+	optional string inter = 3; 
+	/* @Field(index = Index.YES, store = Store.YES) @SortableField
+ @VariableInfo(tags="") */ 
+	optional string secondEnd = 4; 
+	/* @Field(index = Index.YES, store = Store.YES) @SortableField */ 
+	optional org.kie.kogito.index.model.KogitoMetadata metadata = 5; 
+}
