@@ -1,0 +1,30 @@
+syntax = "proto2"; 
+package org.acme.deals.intermediate; 
+import "kogito-index.proto";
+import "kogito-types.proto";
+option kogito_model = "Intermediate";
+option kogito_id = "intermediate";
+
+/* @Indexed */ 
+message Intermediate { 
+	option java_package = "org.acme.deals";
+	/* @Field(index = Index.YES, store = Store.YES) @SortableField
+ @VariableInfo(tags="") */ 
+	optional string end = 1; 
+	/* @Field(index = Index.YES, store = Store.YES) @SortableField */ 
+	optional string id = 2; 
+	/* @Field(index = Index.YES, store = Store.YES) @SortableField
+ @VariableInfo(tags="") */ 
+	optional string inter = 3; 
+	/* @Field(index = Index.YES, store = Store.YES) @SortableField
+ @VariableInfo(tags="") */ 
+	optional string processid = 4; 
+	/* @Field(index = Index.YES, store = Store.YES) @SortableField
+ @VariableInfo(tags="") */ 
+	optional string start = 5; 
+	/* @Field(index = Index.YES, store = Store.YES) @SortableField
+ @VariableInfo(tags="") */ 
+	optional string success = 6; 
+	/* @Field(index = Index.YES, store = Store.YES) @SortableField */ 
+	optional org.kie.kogito.index.model.KogitoMetadata metadata = 7; 
+}

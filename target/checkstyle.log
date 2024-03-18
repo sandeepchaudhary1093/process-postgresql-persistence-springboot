@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<checkstyle version="9.3">
+<checkstyle version="8.34">
 <file name="/Users/sandeepchaudhary/Downloads/kogito-examples-main/kogito-springboot-examples/process-postgresql-persistence-springboot/src/main/java/org/acme/travels/KogitoApplication.java">
 <error line="2" severity="error" message="Line does not match expected header line of &apos;^ \* Licensed to the Apache Software Foundation \(ASF\) under one$&apos;." source="com.puppycrawl.tools.checkstyle.checks.header.RegexpHeaderCheck"/>
 </file>
@@ -8,5 +8,7 @@
 </file>
 <file name="/Users/sandeepchaudhary/Downloads/kogito-examples-main/kogito-springboot-examples/process-postgresql-persistence-springboot/src/main/java/org/acme/travels/Traveller.java">
 <error line="2" severity="error" message="Line does not match expected header line of &apos;^ \* Licensed to the Apache Software Foundation \(ASF\) under one$&apos;." source="com.puppycrawl.tools.checkstyle.checks.header.RegexpHeaderCheck"/>
+</file>
+<file name="/Users/sandeepchaudhary/Downloads/kogito-examples-main/kogito-springboot-examples/process-postgresql-persistence-springboot/src/main/resources/application.properties">
 </file>
 </checkstyle>

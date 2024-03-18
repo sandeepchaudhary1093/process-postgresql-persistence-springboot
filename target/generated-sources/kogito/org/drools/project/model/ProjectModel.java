@@ -8,7 +8,7 @@ public class ProjectModel implements org.drools.modelcompiler.CanonicalKieModule
 
     @Override
     public String getVersion() {
-        return "999-SNAPSHOT";
+        return "8.45.0-SNAPSHOT";
     }
 
     @Override
